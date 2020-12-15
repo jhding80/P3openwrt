@@ -15,3 +15,7 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+git clone https://github.com/kenzok8/openwrt-packages.git  package/openwrt-packages
+git clone https://github.com/kenzok8/small.git  package/openwrt-small
+
+qemu-img convert -f vmdk -O raw openwrt-x86-generic-combined-ext4.vmdk OpenWRT-0.hdd
